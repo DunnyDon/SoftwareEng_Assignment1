@@ -1,11 +1,9 @@
 language: java
-environment:Windows
 jdk:
    - openjdk 8
    
 after_success:
    - mvn clean package
-   - mvn test
 
 notifications:
   email:
