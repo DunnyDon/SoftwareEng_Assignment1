@@ -2,11 +2,8 @@ language: java
 jdk:
    - openjdk 8
    
-before_script: mkdir -p shippable/testresults
-script:
-   - src/test/java/Testing/UsernameTest.java
 after_success:
-   - mvn clean package
+   - mvn test
 
 notifications:
   email:
