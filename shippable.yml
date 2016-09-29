@@ -1,7 +1,6 @@
 language: java
 jdk:
-   - openjdk 8
-   
+   - oraclejdk 8
 after_success:
    - mvn test
 
