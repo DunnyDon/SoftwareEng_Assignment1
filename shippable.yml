@@ -1,0 +1,10 @@
+build_environment: Windows
+language: java
+jdk: jdk1.8.0_101
+after_success: 
+	mvn clean package
+	mvn test
+notifications:
+	email:
+		recipients:
+			conordonohue@gmail.com
